@@ -27,4 +27,4 @@ def get_prediction():
         return jsonify(latest_prediction)
 
 if __name__ == "__main__":
-    app.run(debug=True, port=8080, threaded=True)
+    app.run(host='0.0.0.0', port=8080, debug=True)
